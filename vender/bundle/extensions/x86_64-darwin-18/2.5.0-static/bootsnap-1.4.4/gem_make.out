@@ -1,0 +1,15 @@
+current directory: /Users/fujiwara/Desktop/Object-oriented/trip_system/vender/bundle/gems/bootsnap-1.4.4/ext/bootsnap
+/Users/fujiwara/.rbenv/versions/2.5.0/bin/ruby -r ./siteconf20190812-44154-1q7xmng.rb extconf.rb
+creating Makefile
+
+current directory: /Users/fujiwara/Desktop/Object-oriented/trip_system/vender/bundle/gems/bootsnap-1.4.4/ext/bootsnap
+make "DESTDIR=" clean
+
+current directory: /Users/fujiwara/Desktop/Object-oriented/trip_system/vender/bundle/gems/bootsnap-1.4.4/ext/bootsnap
+make "DESTDIR="
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+
+current directory: /Users/fujiwara/Desktop/Object-oriented/trip_system/vender/bundle/gems/bootsnap-1.4.4/ext/bootsnap
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20190812-44154-1tss6z7/bootsnap
