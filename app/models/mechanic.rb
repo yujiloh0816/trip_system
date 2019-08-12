@@ -1,19 +1,26 @@
 class Mechanic < ApplicationRecord
 
-  def self.clean_bicycle(bike)
-    bike.update(clean: true)
+  def self.prepare_bicycle(bicycle)
+    clean_bicycle(bicycle)
+    pump_tires(bicycle)
+    lube_chain(bicycle)
+    check_brakes(bicycle)
   end
 
-  def self.pump_tires(bike)
-    bike.update(tires: true)
+  def self.clean_bicycle(bicycle)
+    bicycle.update(clean: true)
   end
 
-  def self.lube_chain(bike)
-    bike.update(chain: true)
+  def self.pump_tires(bicycle)
+    bicycle.update(tires: true)
   end
 
-  def self.check_brakes(bike)
-    bike.update(brakes: true)
+  def self.lube_chain(bicycle)
+    bicycle.update(chain: true)
+  end
+
+  def self.check_brakes(bicycle)
+    bicycle.update(brakes: true)
   end
 
 end

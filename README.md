@@ -50,3 +50,11 @@ Moe(Customerオブジェクト)が何を知らなければいけないか
 ## commit "図4.5"
 
 ### 問題
+TripがMechanicが行うことについて、詳細をいくつも知っている
+Tripはこの知識を自身で持ち、Mechanicに指示するために使っているので、Mechanicが新たに手順を加えたときにTripも変わらんければいけない。
+
+## commit "図4.6"
+
+### 対策
+Tripは、MechanicにそれぞれのBicycleを準備するように頼み、実装の詳細はMechanicにまかせる
+TripはMechanicがBicycleの準備をどういう風にするか知らなくなった
