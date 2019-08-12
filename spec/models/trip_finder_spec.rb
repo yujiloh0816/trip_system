@@ -12,7 +12,7 @@ RSpec.describe TripFinder, type: :model do
       trips: [imperial_palace01, imperial_palace02],
       bicycle: road_bicycle
     }
-    expect(TripFinder.suitable_trips(moe.on_date, moe.of_difficulty, moe.need_bike)).to eq suitable_trips
+    expect(TripFinder.suitable_trip_plans(moe.on_date, moe.of_difficulty, moe.need_bike)).to eq suitable_trips
   end
 
 end
