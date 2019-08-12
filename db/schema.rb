@@ -10,16 +10,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_12_093356) do
+ActiveRecord::Schema.define(version: 2019_08_12_100315) do
 
   create_table "bicycles", force: :cascade do |t|
+    t.integer "trip_id"
     t.date "trip_date"
     t.integer "route_type"
+    t.boolean "clean"
+    t.boolean "tires"
+    t.boolean "chain"
+    t.boolean "brakes"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "customers", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "mechanics", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
