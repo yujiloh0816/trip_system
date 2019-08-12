@@ -40,6 +40,9 @@ ActiveRecord::Schema.define(version: 2019_08_12_122358) do
   end
 
   create_table "trip_finders", force: :cascade do |t|
+    t.date "on_date"
+    t.integer "of_difficulty"
+    t.integer "need_bike"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
