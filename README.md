@@ -58,3 +58,13 @@ Tripはこの知識を自身で持ち、Mechanicに指示するために使っ�
 ### 対策
 Tripは、MechanicにそれぞれのBicycleを準備するように頼み、実装の詳細はMechanicにまかせる
 TripはMechanicがBicycleの準備をどういう風にするか知らなくなった
+
+## commit "図4.7"
+
+### コンテキストの独立を模索する
+
+#### 問題
+prepare_bicyclesメソッドはMechanicとのコンテキストを必要とするメソッド
+
+#### 対策
+依存オブジェクトの注入

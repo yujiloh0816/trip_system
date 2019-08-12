@@ -1,5 +1,11 @@
 class Mechanic < ApplicationRecord
 
+  def self.prepare_trip(bicycles)
+    bicycles.each do |bicycle|
+      prepare_bicycle(bicycle)
+    end
+  end
+
   def self.prepare_bicycle(bicycle)
     clean_bicycle(bicycle)
     pump_tires(bicycle)
