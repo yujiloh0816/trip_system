@@ -1,5 +1,4 @@
 class TripFinder < ApplicationRecord
-# class TripFinder
 
   def suitable_trip_plans
     trips = suitable_trips(Trip.all)
@@ -20,5 +19,7 @@ class TripFinder < ApplicationRecord
       route_type: self.need_bike,
     )
   end
+
+  private
 
 end
